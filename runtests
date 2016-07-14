@@ -7,9 +7,9 @@ import sys
 
 
 PYTEST_ARGS = ['tests', '--tb=short']
-FLAKE8_ARGS = ['corehtml_codec', 'tests', '--ignore=E501']
+FLAKE8_ARGS = ['html_codec', 'tests', '--ignore=E501']
 COVERAGE_OPTIONS = {
-    'include': ['corehtml_codec/*', 'tests/*']
+    'include': ['html_codec/*', 'tests/*']
 }
 
 
