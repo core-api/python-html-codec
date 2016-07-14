@@ -61,12 +61,17 @@ setup(
     author_email='tom@tomchristie.com',
     packages=get_packages('html_codec'),
     package_data=get_package_data('html_codec'),
-    install_requires=[],
+    install_requires=['jinja2', 'coreapi'],
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-    ]
+    ],
+    entry_points={
+        'coreapi.codecs': [
+            'html=html_codec:HTMLCodec',
+        ]
+    }
 )

@@ -5,7 +5,7 @@ from coreapi.document import Document, Link, Array, Object, Error
 import jinja2
 
 
-__version__ = "0.0.1"
+__version__ = "1.0.0"
 
 
 env = jinja2.Environment(loader=jinja2.PackageLoader('html_codec', 'templates'))
@@ -45,6 +45,7 @@ def _render_html(node, url=None, key=None, path=''):
 
 class HTMLCodec(BaseCodec):
     media_type = 'text/html'
+    supports = ['encoding']
 
     def dump(self, document, extra_css=None, **kwargs):
         template = env.get_template('index.html')
