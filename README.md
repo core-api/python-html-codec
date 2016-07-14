@@ -101,7 +101,7 @@ The newline character, `'\n'`, MAY be replaced with a `<br/>` element.
 
 Each message in the error SHOULD be included as a `<li>` element, with the text of the element containing the message value.
 
-[travis-image]: https://secure.travis-ci.org/encode/corehtml-codec.svg?branch=master
-[travis]: http://travis-ci.org/encode/corehtml-codec?branch=master
-[pypi-image]: https://img.shields.io/pypi/v/corehtml-codec.svg
-[pypi]: https://pypi.python.org/pypi/corehtml-codec
+[travis-image]: https://secure.travis-ci.org/core-api/python-html-codec.svg?branch=master
+[travis]: http://travis-ci.org/core-api/html-codec?branch=master
+[pypi-image]: https://img.shields.io/pypi/v/html-codec.svg
+[pypi]: https://pypi.python.org/pypi/html-codec

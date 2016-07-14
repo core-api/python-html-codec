@@ -40,7 +40,7 @@ def get_package_data(package):
     return {package: filepaths}
 
 
-version = get_version('corehtml_codec')
+version = get_version('html_codec')
 
 
 if sys.argv[-1] == 'publish':
@@ -52,7 +52,7 @@ if sys.argv[-1] == 'publish':
 
 
 setup(
-    name='corehtml-codec',
+    name='html-codec',
     version=version,
     url='http://github.com/coreapi/python-html-codec/',
     license='BSD',
