@@ -9,7 +9,13 @@
 
 Install using pip:
 
-    $ pip install corehtml-codec
+    $ pip install html-codec
+
+Using with the python client:
+
+    >>> from html_codec import HTMLCodec
+    >>> codec = HTMLCodec()
+    >>> codec.dump(document)
 
 ## Overview
 
@@ -18,7 +24,7 @@ This HTML encoding for Core API allows servers to respond in a way that allows f
 The implementation provided only supports encoding `Document` objects into `HTML`,
 and does not support decoding `HTML` output into a `Document` object.
 
-![HTML Encoding](https://raw.githubusercontent.com/encode/corehtml-codec/master/docs/img/html-encoding.png)
+![HTML Encoding](https://raw.githubusercontent.com/core-api/python-html-codec/master/docs/img/html-encoding.png)
 
 ## HTML encoding
 

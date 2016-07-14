@@ -5,10 +5,10 @@ from coreapi.document import Document, Link, Array, Object, Error
 import jinja2
 
 
-__version__ = "0.0.2"
+__version__ = "0.0.1"
 
 
-env = jinja2.Environment(loader=jinja2.PackageLoader('corehtml_codec', 'templates'))
+env = jinja2.Environment(loader=jinja2.PackageLoader('html_codec', 'templates'))
 env.filters.update({
     'is_link': lambda x: isinstance(x, Link),
     'is_plain_link': lambda x: x.action.upper() in ('GET', '') and not x.fields,
@@ -43,7 +43,7 @@ def _render_html(node, url=None, key=None, path=''):
     return template.render(node=node, render=_render_html, url=url, key=key, path=path)
 
 
-class CoreHTMLCodec(BaseCodec):
+class HTMLCodec(BaseCodec):
     media_type = 'text/html'
 
     def dump(self, document, extra_css=None, **kwargs):

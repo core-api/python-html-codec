@@ -54,13 +54,13 @@ if sys.argv[-1] == 'publish':
 setup(
     name='corehtml-codec',
     version=version,
-    url='http://github.com/encode/corehtml-codec/',
+    url='http://github.com/coreapi/python-html-codec/',
     license='BSD',
     description='An HTML codec for Core API.',
     author='Tom Christie',
     author_email='tom@tomchristie.com',
-    packages=get_packages('corehtml_codec'),
-    package_data=get_package_data('corehtml_codec'),
+    packages=get_packages('html_codec'),
+    package_data=get_package_data('html_codec'),
     install_requires=[],
     classifiers=[
         'Intended Audience :: Developers',
